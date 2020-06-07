@@ -1,5 +1,4 @@
-# coronavirus-website
+# personal-website
 
-This is a ReadMe for the coronavirus website
-
-Plan is to make the website using React. 
+This is a ReadMe for my personal website
+ 
