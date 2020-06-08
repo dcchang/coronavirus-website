@@ -13,3 +13,9 @@ TODOs
     -descriptions
     -animations
     -javascript
+
+4. About page
+    -images
+    -split column layout
+    -content
+
