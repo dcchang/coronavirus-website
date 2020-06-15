@@ -16,7 +16,11 @@ body {
     align-items: center;
     padding: 30px;
     background-color: lightcyan;
+}
+
+.left-side {
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .right-side {
@@ -92,7 +96,7 @@ body {
 
 .contact-button {
     position: absolute;
-    top: 280px;
+    top: 290px;
     font-size: 1rem;
     font-weight: bold;
     padding: 10px;
