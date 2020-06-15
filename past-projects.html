@@ -12,8 +12,8 @@
     </script>
     
     <meta charset="utf-8">
-    <title>About</title> 
-    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+    <title>Past Projects | David Chang</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
@@ -39,24 +39,72 @@
         </div>   
 
         <div class="content-wrapper">
-            <div class="two-column-wrapper">
-                <div class="profile-image-wrapper">
-                    <img src="images/profile-pic.jpg">
+            <div class="projects-wrapper">
+
+                <div class="project-wrapper">
+                    <div class="project-img-background" style="background-image:url(images/north-campus-sunrise.jpg)"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="https://covidcampuschallenge.engin.umich.edu/">
+                                <img src="images/michigan-engineering.png" style="width:100%; margin-bottom:20px;">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            Created a challenge for students at the University of Michigan to build a better campus in the face of COVID-19.
+                        </div>
+                    </div>
                 </div>
 
-                <div class="profile-content-wrapper">
-                    <h1>Sample heading</h1>
-                    <p>
-                        Sample paragraph!
-                    </p>
+                <div class="project-wrapper">
+                    <div class="project-img-background" style="background-image:url(images/medlaunch-background.jpg)"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="http://medlaunch.engin.umich.edu/">
+                                <img src="images/medlaunch-logo.png" style="width:35%; margin-bottom:20px;">
+                            </a>
+                        </div>
 
-                    <p>Another one!
-
-                    </p>
+                        <div class="subtitle">
+                            Built a student organization focused on biomedical design and entrepreneurship.
+                        </div>
+                    </div>
                 </div>
+
+                <div class="project-wrapper">
+                    <div class="project-img-background" style="background-image:url(images/perch-background.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <a href="https://www.perchresearch.com/">
+                                <img src="images/perch-logo.jpg" style="width:35%; margin-bottom:20px;">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            Worked on a cool startup that connected students to academic and industrial research jobs. 
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     </div>
 </body>
+<script>
+    const projectItems = document.querySelectorAll('.project-wrapper')
+    projectItems.forEach(projectItem => {
+        projectItem.addEventListener('mouseover', () => {
+            projectItem.childNodes[1].classList.add('img-darken');
+        });
+
+        projectItem.addEventListener('mouseout', () => {
+            projectItem.childNodes[1].classList.remove('img-darken');
+        });
+    });
+</script>
 
 </html>
