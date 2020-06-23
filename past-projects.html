@@ -24,7 +24,7 @@
    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="nav-wrapper">
             <div class="left-side">
                 <div>DAVID CHANG</div>         
@@ -47,10 +47,8 @@
 
         <div class="content-wrapper">
             <div class="projects-wrapper">
-
                 <div class="project-wrapper">
                     <div class="project-img-background" style="background-image:url(images/north-campus-sunrise.jpg)"></div>
-                
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <a href="https://covidcampuschallenge.engin.umich.edu/">
@@ -68,8 +66,8 @@
                 </div>
 
                 <div class="project-wrapper">
-                    <div class="project-img-background" style="background-image:url(images/medlaunch-background.jpg)"></div>
-                
+                   <div class="project-img-background" style="background-image:url(images/medlaunch-background.jpg)"></div>
+
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <a href="http://medlaunch.engin.umich.edu/">
@@ -86,8 +84,7 @@
                 </div>
 
                 <div class="project-wrapper">
-                    <div class="project-img-background" style="background-image:url(images/perch-background.jpg);"></div>
-                
+                    <div class="project-img-background" style="background-image:url(images/perch-background.jpg)"></div>
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <a href="https://www.perchresearch.com/">
@@ -99,24 +96,9 @@
                             Perch is a startup that connects students to academic and industrial research jobs. I was responsible for business development, which included customer discovery, marketing and growth.
                         </div>
                     </div>
-                </div>
-
-                
+                </div>               
             </div>
         </div>
     </div>
 </body>
-<script>
-    const projectItems = document.querySelectorAll('.project-wrapper')
-    projectItems.forEach(projectItem => {
-        projectItem.addEventListener('mouseover', () => {
-            projectItem.childNodes[1].classList.add('img-darken');
-        });
-
-        projectItem.addEventListener('mouseout', () => {
-            projectItem.childNodes[1].classList.remove('img-darken');
-        });
-    });
-</script>
-
 </html>
