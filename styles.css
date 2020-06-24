@@ -67,7 +67,6 @@ body {
 .burger {
     display: none;
     cursor: pointer;
-    border: 2px dashed black;
     position: absolute;
     right: 0;
     top: 0;
@@ -151,6 +150,8 @@ body {
     align-items: center;
     text-align: center;
     padding-bottom: 10vh;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .social-media-wrapper {
