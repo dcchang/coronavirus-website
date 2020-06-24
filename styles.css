@@ -112,7 +112,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: cener;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -210,12 +210,6 @@ body {
     text-align: justify;
 }
 
-@media screen and (max-width: 768px) {
-    .two-column-wrapper{
-        flex-direction: column;
-    }
-}
-
 /* Past projects */
 
 .projects-wrapper {
@@ -229,7 +223,7 @@ body {
 
 .project-img-background {
     height: 430px;
-    width: 100%;
+    min-width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,6 +256,7 @@ body {
     transition: 0.7s;
     font-weight: 600;
     color: transparent;
+    text-align: left;
 }
 
 .img-text-wrapper:hover .subtitle {
@@ -273,7 +268,9 @@ body {
     filter: brightness(10%);
 }
 
+/* For mobile */
 @media screen and (max-width: 768px) {
+    /* Home */
     .logo {
         padding-left:25px;
     }
@@ -309,6 +306,22 @@ body {
     .active-nav-link {
         border-bottom: transparent;
         background: darkcyan;
+    }
+    
+    /* About */
+    .two-column-wrapper{
+        flex-direction: column;
+    }
+
+    /* Past Projects */
+
+    .img-text-wrapper {
+        padding: 20px;
+    }
+
+    .project-img-background.medlaunch {
+        /* height:430px; */
+        background-position: right;
     }
 
 }
