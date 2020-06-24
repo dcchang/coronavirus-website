@@ -16,8 +16,12 @@
 
     <title>David Chang</title> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
     <link rel="stylesheet" href="styles.css"> 
 
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -27,17 +31,17 @@
 </head>
 <body>
     <div class="container">
-        <div class="nav-wrapper" style="position:fixed;top:0;right:0;left:0;">
-            
-            <div class="left-side">
-                <div>DAVID CHANG</div>         
+        <div class="navbar" style="position:fixed;top:0;left:0;right:0;">
+            <div class="logo">DAVID CHANG</div>
+            <div class="burger" onclick="myFunction()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-            
-            <div class="right-side">
+            <div class="nav-links">
                 <div class="nav-link-wrapper active-nav-link">
                     <a href="/">Home</a>
                 </div>
-
                 <div class="nav-link-wrapper">
                     <a href="about">About</a>
                 </div>
@@ -46,10 +50,21 @@
                     <a href="past-projects">Past Projects</a>
                 </div>
             </div>
-        </div>   
+        </div>
+        <script>
+            //   toggle active class on click and bring menu down
+            function myFunction() {
+                var navlink = document.querySelector('.nav-links');
+                var navbar = document.querySelector('.navbar');
+                var burger = document.querySelector('.burger');
+                burger.classList.toggle("active");
+                navlink.classList.toggle("active");
+                navbar.classList.toggle("active");
+            }
+        </script>
 
         <div class="content-wrapper">
-            <div class="home-content-wrapper">           
+            <div class="home-content-wrapper">       
                 <div class="opening-words">
                    Trying to understand the universe, one day at a time.
                 </div>
