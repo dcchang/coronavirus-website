@@ -217,6 +217,12 @@ body {
     flex-direction: column;
 }
 
+.instructions {
+    display:none;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
 .project-wrapper {
     position: relative;
 }
@@ -251,6 +257,14 @@ body {
 .img-text-wrapper:hover .logo-wrapper img {
     opacity: 1;
 }
+
+.img-text-wrapper .logo-wrapper .project-link {
+    pointer-events: none;
+}
+
+/* .img-text-wrapper .logo-wrapper .project-link.active {
+    pointer-events: auto;
+} */
 
 .img-text-wrapper .subtitle {
     transition: 0.7s;
@@ -300,11 +314,11 @@ body {
         font-weight:bold;
     }
     .nav-link-wrapper:hover {
-        border-bottom: transparent;
+        border-bottom: 0px transparent;
     }
 
     .active-nav-link {
-        border-bottom: transparent;
+        border-bottom: 0px transparent;
         background: darkcyan;
     }
     
@@ -315,13 +329,18 @@ body {
 
     /* Past Projects */
 
+    .instructions {
+        display: flex;
+        background: lavender;
+    }
+
     .img-text-wrapper {
         padding: 20px;
     }
 
     .project-img-background.medlaunch {
         /* height:430px; */
-        background-position: right;
+        background-position: 88%;
     }
 
 }

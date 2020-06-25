@@ -23,7 +23,7 @@
    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
    <link rel="manifest" href="/site.webmanifest">
 </head>
-<body>
+<body onclick>
     <div class="container">
         <div class="navbar">
             <div class="logo">DAVID CHANG</div>
@@ -58,19 +58,22 @@
         </script>
 
         <div class="content-wrapper">
+            <div class="instructions">
+                <p>Tap on each image to learn more about each project! Tap on the logo that appears to be directed to a website with more information for each project.</p>
+            </div>
             <div class="projects-wrapper">
                 <div class="project-wrapper">
                     <div class="project-img-background" style="background-image:url(images/north-campus-sunrise.jpg)"></div>
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <a href="https://covidcampuschallenge.engin.umich.edu/">
+                            <a href="https://covidcampuschallenge.engin.umich.edu/" class="project-link">
                                 <img src="images/michigan-engineering.png" style="width:100%; margin-bottom:20px;">
                             </a>
                         </div>
 
                         <div class="subtitle">
                             I created a challenge for students at the University of Michigan to build a better campus in the face of COVID-19. Over 600 students from across the 
-                            university competed to create novel solutions to problems that the university will face in the fall because of COVID-19.                    
+                            university came together to create novel solutions to problems that the university will encounter in the fall amid social distancing restrictions.                    
                         </div>
                     </div>
                 </div>
@@ -80,7 +83,7 @@
 
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <a href="http://medlaunch.engin.umich.edu/">
+                            <a href="http://medlaunch.engin.umich.edu/" class="project-link">
                                 <img src="images/medlaunch-logo.png" style="width:40%; margin-bottom:20px;">
                             </a>
                         </div>
@@ -97,7 +100,7 @@
                     <div class="project-img-background" style="background-image:url(images/perch-background.jpg)"></div>
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
-                            <a href="https://www.perchresearch.com/">
+                            <a href="https://www.perchresearch.com/" class="project-link">
                                 <img src="images/perch-logo.jpg" style="width:35%; margin-bottom:20px;">
                             </a>
                         </div>
@@ -110,5 +113,15 @@
             </div>
         </div>
     </div>
+    <!-- <script>
+        // if you click on the project wrapper, turn on the active state for the link
+        const projects = document.querySelectorAll('.project-wrapper');
+        projects.forEach(project => {
+            project.addEventListener('touchstart', () => {
+                console.log(project.childNodes[3].childNodes[1].childNodes[1].classList.toggle("active"));
+                // project.childNodes[4].classList.toggle("active");
+            });
+        });
+    </script> -->
 </body>
 </html>

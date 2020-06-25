@@ -29,7 +29,7 @@
 
     
 </head>
-<body>
+<body onclick>
     <div class="container">
         <div class="navbar">
             <div class="logo">DAVID CHANG</div>
@@ -54,11 +54,11 @@
         <script>
             //   toggle active class on click and bring menu down
             function myFunction() {
-                var navlink = document.querySelector('.nav-links');
+                var navlinks = document.querySelector('.nav-links');
                 var navbar = document.querySelector('.navbar');
                 var burger = document.querySelector('.burger');
                 burger.classList.toggle("active");
-                navlink.classList.toggle("active");
+                navlinks.classList.toggle("active");
                 navbar.classList.toggle("active");
             }
         </script>
