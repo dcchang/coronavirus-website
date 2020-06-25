@@ -217,12 +217,6 @@ body {
     flex-direction: column;
 }
 
-.instructions {
-    display:none;
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-}
 .project-wrapper {
     position: relative;
 }
@@ -318,7 +312,6 @@ body {
     }
 
     .project-img-background.medlaunch {
-        /* height:430px; */
         background-position: 88%;
     }
 
