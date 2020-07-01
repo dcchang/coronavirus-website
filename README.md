@@ -1,6 +1,6 @@
 # personal-website
 
-Website currently has the following:
+Website is currently built using **html** and **css** and has the following:
 
 1. Home page with links to social media accounts
 2. About page with picture and description of myself
